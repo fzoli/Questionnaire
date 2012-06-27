@@ -1,0 +1,207 @@
+@import url("base.css");
+
+form {
+    text-align: center;
+}
+
+input {
+    width: 200px;
+}
+
+input.gomb {
+    width: 50px;
+}
+
+div#title {
+    font-size: 24px;
+}
+
+div#content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+table#menu {
+    padding: 0px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 3px;
+    left: 0px;
+    font-size: 18px;
+    border-spacing: 0px;
+}
+
+table#menu td {
+    
+    height: 30px;
+}
+
+table#menu td.left {
+    width:20%;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+table#menu td.center {
+    text-align: center;
+}
+
+table#menu td.right {
+    width:20%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+div#captcha_keres {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+table {
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr td:first-child {
+    text-align: right;
+    padding-right: 5px;
+}
+
+div#needjs {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+table#flags {
+    z-index: 10;
+    padding: 0px;
+    position: fixed;
+    bottom: 5px;
+    width: 100px;
+    left: 50%;
+    border-spacing: 0px;
+    margin-left: -50px;
+}
+
+table#menu, table#flags td {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+table#flags td, div#frm_lang {
+    font: bold 15px arial;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    color: white;
+    text-align: center;
+    width: 45px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#head, div#bottom {
+    background-color: cyan;
+    z-index: 10;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    
+}
+
+div#bottom {
+    bottom: 0px;
+    border-top: black solid 2px;
+}
+
+div#head {
+    top: 0px;
+    border-bottom: black solid 2px;
+}
+
+img.icon {
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+table#flags tr td {
+    padding: 0px;
+}
+
+select#select {
+    width:100px;
+    position:relative;
+    top: -10px;
+    text-align: center;
+}
+
+img#prev {
+    margin-right: 10px;
+}
+
+img#next {
+    margin-left: 10px;
+}
+
+div#message {
+    text-align: center;
+    font-size: 24px;
+}
+
+div#error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+div#frm_lang {
+    z-index: -1;
+    position: fixed;
+    bottom: 47px;
+    right: 5px;
+    opacity:0.4;
+}
+
+div#printer {
+    display: none;
+}
+
+@media print {
+    
+    body {
+        background-color: white;
+    }
+    
+    div#printer {
+        display: block;
+    }
+    
+    div#head, div#bottom, table#menu, table#flags {
+        display: none;
+    }
+    
+    div#content {
+        margin-top : 0px;
+        margin-bottom: 0px;
+    }
+    
+}

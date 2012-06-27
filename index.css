@@ -1,0 +1,39 @@
+@import url("base.css");
+
+div#kerdoiv {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+div.kerdes, div.hibas_kerdes {
+    font-size: large;
+}
+
+div.hibas_kerdes {
+    color: red;
+}
+
+div.valasz {
+    padding: 5px;
+}
+
+div#submit {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#nyelv_valaszto, div#elkoszones {
+    text-align: center;
+    font-size: 24px;
+}
+
+select#nyelv_select {
+    margin-top: 10px;
+}
+
+div#captcha_keres {
+    margin-top: 10px;
+    font-size: 14px;
+}
